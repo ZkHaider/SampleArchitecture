@@ -10,6 +10,8 @@
 
 @interface FirstViewController ()
 
+@property (weak, nonatomic) IBOutlet UITableView *postsTableView;
+
 @end
 
 @implementation FirstViewController
@@ -23,5 +25,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+# pragma TableView methods
+
+
 
 @end

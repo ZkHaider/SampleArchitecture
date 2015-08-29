@@ -10,6 +10,8 @@
 
 @interface SecondViewController ()
 
+@property (weak, nonatomic) IBOutlet UITableView *photoTableView;
+
 @end
 
 @implementation SecondViewController
