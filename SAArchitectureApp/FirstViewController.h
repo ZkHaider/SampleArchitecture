@@ -10,6 +10,7 @@
 
 @interface FirstViewController : UIViewController <UITableViewDataSource, UITabBarDelegate>
 
+@property (nonatomic) NSMutableArray *posts;
 
 @end
 

@@ -10,11 +10,14 @@
 
 @interface FirstViewController ()
 
-@property (weak, nonatomic) IBOutlet UITableView *postsTableView;
-
 @end
 
 @implementation FirstViewController
+
+- (id)init{
+    _posts = [NSMutableArray array];
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,6 +31,12 @@
 
 # pragma TableView methods
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [_posts count];
+}
 
 @end

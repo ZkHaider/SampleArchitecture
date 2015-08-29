@@ -16,8 +16,10 @@
 		4BA337C81B9156B600AF9A94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA337C71B9156B600AF9A94 /* Images.xcassets */; };
 		4BA337CB1B9156B600AF9A94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA337C91B9156B600AF9A94 /* LaunchScreen.xib */; };
 		4BA337D71B9156B600AF9A94 /* SAArchitectureAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA337D61B9156B600AF9A94 /* SAArchitectureAppTests.m */; };
-		4BA337E21B9156C600AF9A94 /* Api in Resources */ = {isa = PBXBuildFile; fileRef = 4BA337E01B9156C600AF9A94 /* Api */; };
-		4BA337E31B9156C600AF9A94 /* Bus in Resources */ = {isa = PBXBuildFile; fileRef = 4BA337E11B9156C600AF9A94 /* Bus */; };
+		4BA337E91B91594B00AF9A94 /* SAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA337E81B91594B00AF9A94 /* SAClient.m */; };
+		4BA337ED1B91598000AF9A94 /* SAPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA337EC1B91598000AF9A94 /* SAPost.m */; };
+		4BA337F01B91598600AF9A94 /* SAPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA337EF1B91598600AF9A94 /* SAPhoto.m */; };
+		4BA337F41B9159D400AF9A94 /* SABus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA337F31B9159D400AF9A94 /* SABus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +49,15 @@
 		4BA337D01B9156B600AF9A94 /* SAArchitectureAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAArchitectureAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA337D51B9156B600AF9A94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BA337D61B9156B600AF9A94 /* SAArchitectureAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAArchitectureAppTests.m; sourceTree = "<group>"; };
-		4BA337E01B9156C600AF9A94 /* Api */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Api; path = ../../SampleArchitectureApp/SampleArchitectureApp/Api; sourceTree = "<group>"; };
-		4BA337E11B9156C600AF9A94 /* Bus */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Bus; path = ../../SampleArchitectureApp/SampleArchitectureApp/Bus; sourceTree = "<group>"; };
 		4BA337E41B9156F100AF9A94 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		4BA337E71B91594B00AF9A94 /* SAClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAClient.h; sourceTree = "<group>"; };
+		4BA337E81B91594B00AF9A94 /* SAClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAClient.m; sourceTree = "<group>"; };
+		4BA337EB1B91598000AF9A94 /* SAPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPost.h; sourceTree = "<group>"; };
+		4BA337EC1B91598000AF9A94 /* SAPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPost.m; sourceTree = "<group>"; };
+		4BA337EE1B91598600AF9A94 /* SAPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPhoto.h; sourceTree = "<group>"; };
+		4BA337EF1B91598600AF9A94 /* SAPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPhoto.m; sourceTree = "<group>"; };
+		4BA337F21B9159D400AF9A94 /* SABus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SABus.h; sourceTree = "<group>"; };
+		4BA337F31B9159D400AF9A94 /* SABus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SABus.m; sourceTree = "<group>"; };
 		7BD34DEA655004F1565893B3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		90C4E043307187C53B350108 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,8 +113,8 @@
 		4BA337B61B9156B600AF9A94 /* SAArchitectureApp */ = {
 			isa = PBXGroup;
 			children = (
-				4BA337E01B9156C600AF9A94 /* Api */,
-				4BA337E11B9156C600AF9A94 /* Bus */,
+				4BA337E51B91591000AF9A94 /* Api */,
+				4BA337F11B9159B600AF9A94 /* Bus */,
 				4BA337BB1B9156B600AF9A94 /* AppDelegate.h */,
 				4BA337BC1B9156B600AF9A94 /* AppDelegate.m */,
 				4BA337BE1B9156B600AF9A94 /* FirstViewController.h */,
@@ -145,6 +153,44 @@
 				4BA337D51B9156B600AF9A94 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4BA337E51B91591000AF9A94 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				4BA337EA1B91596600AF9A94 /* Entities */,
+				4BA337E71B91594B00AF9A94 /* SAClient.h */,
+				4BA337E81B91594B00AF9A94 /* SAClient.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		4BA337EA1B91596600AF9A94 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4BA337EB1B91598000AF9A94 /* SAPost.h */,
+				4BA337EC1B91598000AF9A94 /* SAPost.m */,
+				4BA337EE1B91598600AF9A94 /* SAPhoto.h */,
+				4BA337EF1B91598600AF9A94 /* SAPhoto.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		4BA337F11B9159B600AF9A94 /* Bus */ = {
+			isa = PBXGroup;
+			children = (
+				4BA337F51B9159EC00AF9A94 /* Events */,
+				4BA337F21B9159D400AF9A94 /* SABus.h */,
+				4BA337F31B9159D400AF9A94 /* SABus.m */,
+			);
+			path = Bus;
+			sourceTree = "<group>";
+		};
+		4BA337F51B9159EC00AF9A94 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Events;
 			sourceTree = "<group>";
 		};
 		FD781E2E5BEC89781B0C17F7 /* Pods */ = {
@@ -239,9 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BA337C61B9156B600AF9A94 /* Main.storyboard in Resources */,
-				4BA337E21B9156C600AF9A94 /* Api in Resources */,
 				4BA337CB1B9156B600AF9A94 /* LaunchScreen.xib in Resources */,
-				4BA337E31B9156C600AF9A94 /* Bus in Resources */,
 				4BA337C81B9156B600AF9A94 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,10 +337,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA337F41B9159D400AF9A94 /* SABus.m in Sources */,
 				4BA337C31B9156B600AF9A94 /* SecondViewController.m in Sources */,
+				4BA337ED1B91598000AF9A94 /* SAPost.m in Sources */,
 				4BA337BD1B9156B600AF9A94 /* AppDelegate.m in Sources */,
+				4BA337F01B91598600AF9A94 /* SAPhoto.m in Sources */,
 				4BA337C01B9156B600AF9A94 /* FirstViewController.m in Sources */,
 				4BA337BA1B9156B600AF9A94 /* main.m in Sources */,
+				4BA337E91B91594B00AF9A94 /* SAClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
